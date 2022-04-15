@@ -43,3 +43,9 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.button {
+  padding: 15px 25px;
+  color: $green44;
+  background-color: $whiteff;
+}
