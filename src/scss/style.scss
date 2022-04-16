@@ -83,5 +83,79 @@
   &__link {
 
   }
+}
 
+.brands {
+  padding: 70px 0;
+
+  &__subtitle {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-style: 32px;
+    line-height: 1.4;
+    color: $green4d;
+    text-align: center;
+    padding-bottom: 40px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+}
+
+.about {
+  padding: 70px 0;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+  }
+
+  &__image {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: -35px;
+      background-color: $greene2;
+      transform: translate(35px, 35px);
+      z-index: -1;
+    }
+  }
+
+  &__img {
+    min-width: 596px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__box {
+    max-width: 437px;
+  }
+
+  &__title {
+    font-family: 'Monserrat', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.3;
+    margin-bottom: 20px;
+    color: $green4d;
+  }
+
+  &__text {
+    font-family: 'BM Sans', sans-serif;
+    font-weight: 400;
+    font-style: 20px;
+    line-height: 1.2;
+    color: $gray44;
+    margin-bottom: 40px;
+  }
 }
