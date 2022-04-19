@@ -445,3 +445,64 @@ body {
   right: 66px;
   left: auto;
 }
+
+.popular-furniture__swiper .swiper-button-prev::after {
+  content: url("../img/arrow-left.svg");
+  font-size: 0;
+}
+
+.popular-furniture__swiper .swiper-button-next::after {
+  content: url("../img/arrow-right.svg");
+  font-size: 0;
+}
+
+.all-furniture {
+  padding: 70px 0;
+}
+
+.all-furniture__subtitle {
+  font-family: "Monserrat", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.8;
+  color: #242424;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.all-furniture__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.all-furniture__item {
+  margin-right: 100px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.1;
+  color: #919090;
+}
+
+.all-furniture__item:last-child {
+  margin-right: 0;
+}
+
+.all-furniture__tab-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.all-furniture__tab-item {
+  display: none;
+}
+
+.tab-active {
+  display: block;
+}
