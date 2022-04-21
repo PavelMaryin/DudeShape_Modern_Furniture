@@ -10480,3 +10480,4 @@ const checkoutTabs = (item, index) => {
 }
 
 tabItems.forEach(checkoutTabs);
+
