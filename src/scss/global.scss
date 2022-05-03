@@ -20,6 +20,8 @@ $blueff:    #ECF4FF;
 $grayba:    #bababa;
 $graye5:    #d9dce5;
 $gray80:    #808080;
+$green80:   #407980;
+$yellow24:  #FFB624;
 
 // global classes
 
@@ -51,4 +53,51 @@ body {
   padding: 15px 25px;
   color: $green44;
   background-color: $whiteff;
+}
+
+.text-effect {
+  position: relative;
+  cursor: pointer;
+  transition: color 0.3s, padding 0.3s;
+  outline: transparent;
+  
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: $yellow24;
+    opacity: 0.3;
+    transition: height 0.3s, transform 0.3s;
+  }
+
+    &:hover {
+    color: $yellow24;
+  }
+
+  &:active::before {
+    transform: rotate(30deg);
+  }
+
+  &:focus::before {
+      height: 100%;
+  }
+}
+
+.input-effect {
+  outline: transparent;
+
+  &:focus {
+    box-shadow: 0 0 10px $yellow24;
+  }
 }
